@@ -1,3 +1,5 @@
+import "./HelloWorld.css";
+
 export default function HelloWorld() {
     const props = {
         text: "Hello W12orld"
@@ -12,10 +14,7 @@ export default function HelloWorld() {
 
 function HeaderHelloWorld({text = "default"}) {
 //   const text = "Hello World123123";
-  return <h1 style={{ 
-    color: "red",
-    backgroundColor: "blue",
-   }}>{text.toUpperCase()}</h1>;
+  return <h1 className="title">{text.toUpperCase()}</h1>;
 }
 
 function ParagraphHelloWorld() {
@@ -24,5 +23,5 @@ function ParagraphHelloWorld() {
     color: "blue",
     backgroundColor: "red",
   };
-  return <p style={style }>{text.toLowerCase()}</p>;
+  return <p className="content">{text.toLowerCase()}</p>;
 }

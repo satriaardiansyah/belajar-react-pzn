@@ -11,7 +11,6 @@ export default function Counter() {
         // setCounter((c) => c + 1);
         //masih 0, nilai 3 akan dihitung setelah render selesai
         console.log(counter);
-        console.log(counter);
     }
     return (
         <div>
